@@ -1,0 +1,25 @@
+{
+    "name" : "CodeBlocker",
+    "version" : "1.0.0",
+    "description" : "It blocks all coding sites to create some times for relax",
+    "permissions" : ["webRequest", "webRequestBlocking", "<all_urls>"],
+    "icons" : {
+        "16" : "static/logo.png",
+        "48" : "static/logo.png",
+        "128" : "static/logo.png"
+    },
+    "content_scripts": [
+        {
+            "matches" : ["<all_urls>"],
+            "js" : ["script.js"]
+        }
+    ],
+    "manifest_version": 2,
+    "web_accessible_resources": [
+        "static/1.jpg",
+        "static/2.jpg",
+        "static/3.jpg",
+        "static/4.jpg",
+        "static/5.jpg"
+      ]
+}
